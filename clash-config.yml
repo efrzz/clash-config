@@ -5,6 +5,7 @@ tproxy-port: 0
 mode: rule
 log-level: info
 allow-lan: true
+unified-delay: true
 external-controller: 0.0.0.0:9090
 # secret: '123456'
 bind-address: "*"
@@ -18,19 +19,19 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   - "*.lan"
-  - "*.localdomain"
-  - "*.example"
-  - "*.invalid"
-  - "*.localhost"
-  - "*.test"
-  - "*.local"
-  - "*.home.arpa"
+  # - "*.localdomain"
+  # - "*.example"
+  # - "*.invalid"
+  # - "*.localhost"
+  # - "*.test"
+  # - "*.local"
+  # - "*.home.arpa"
   
   default-nameserver:
   - 8.8.8.8 #google
   - 8.8.4.4 #google
-  # - 1.1.1.1 #cloudflare
-  # - 1.0.0.1 #cloudflare
+  - 1.1.1.1 #cloudflare
+  - 1.0.0.1 #cloudflare
   # - 9.9.9.9 #quaddns
   # - 9.9.9.11 #quaddns
   # - 192.168.170.28 #Tsel
@@ -48,8 +49,8 @@ dns:
   nameserver:
   - 8.8.8.8 #google
   - 8.8.4.4 #google
-  # - 1.1.1.1 #cloudflare
-  # - 1.0.0.1 #cloudflare
+  - 1.1.1.1 #cloudflare
+  - 1.0.0.1 #cloudflare
   # - 9.9.9.9 #quaddns
   # - 9.9.9.11 #quaddns
   # - 192.168.170.28 #Tsel
@@ -76,10 +77,15 @@ profile:
   
 tun:
   enable: true
+  device: utun
   stack: system
   dns-hijack:
   - tcp://8.8.8.8:53
   - tcp://8.8.4.4:53
+  - any:53
+  - tcp://any:53
+  auto-route : true
+  auto-detect-interface: true
 
 ping-url:
   - &ping "http://www.gstatic.com/generate_204"
