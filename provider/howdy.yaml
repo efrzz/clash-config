@@ -1,3 +1,4 @@
+## proxy provider by @efrzz ##
 
 proxies:
     
@@ -27,22 +28,6 @@ proxies:
       path: /howdy
       headers:
         Host: sg1-trojan.bonds.id
-    udp: true
-
-  - name: opentunnel.net-3oktob
-    server: udemy.com
-    port: 443
-    type: vmess
-    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-    alterId: 16
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /u/opentunnel.net-3oktobb
-      headers:
-        Host: sgv-6.openv2ray.com
     udp: true
 
   - name: ASIA Trojan-WS(2023-10-03)
