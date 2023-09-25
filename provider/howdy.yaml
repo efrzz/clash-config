@@ -1,22 +1,5 @@
 
 proxies:
-
-  - name: join.iptunnels.com
-    server: udemy.com
-    port: 443
-    type: vmess
-    uuid: 97b063c7-ff7a-4d46-a3a6-9ef8122c6fb7
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: cpanel.iptunnels.com
-    network: ws
-    ws-opts:
-      path: /buy-vmess-ws-pm-telegram-at-synricha
-      headers:
-        Host: cpanel.iptunnels.com
-    udp: true
     
   - name: AMP
     server: udemy.com
