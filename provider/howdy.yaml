@@ -29,7 +29,7 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
 
-  - name: opentunnel.net-3oktobb
+  - name: opentunnel.net-3oktob
     server: udemy.com
     port: 443
     type: vmess
@@ -38,10 +38,9 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgv-6.openv2ray.com
     network: ws
     ws-opts:
-      path: /opentunnel?user=opentunnel.net-3oktobb
+      path: /u/opentunnel.net-3oktobb
       headers:
         Host: sgv-6.openv2ray.com
     udp: true
