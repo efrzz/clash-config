@@ -28,4 +28,17 @@ proxies:
       headers:
         Host: sg1-trojan.bonds.id
     udp: true
-    
+
+  - name: ASIA Trojan-WS(2023-10-03)
+    server: udemy.com
+    port: 443
+    type: trojan
+    password: 5364ff30-5bf5-11ee-b734-205c6d5f5d78
+    skip-cert-verify: true
+    sni: asia.oceis.net
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: asia.oceis.net
+    udp: true
