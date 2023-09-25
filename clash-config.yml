@@ -1,3 +1,5 @@
+##### CLASH CONFIG BY @efrzz #####
+
 redir-port: 9797
 tproxy-port: 0
 # socks-port: 7891
