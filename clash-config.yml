@@ -62,10 +62,10 @@ dns:
 ## Untuk dns provider diatas bisa dilihat lewat app Devcheck ##
 
   nameserver-policy:
-  #bug:DNSprovider
+  # bug:DNSprovider
   '+.udemy.com': '10.19.71.148'
-  #server:DNSprovider
-  '+test3.net,+.bonds.id': '10.19.71.148'
+  # server:DNSprovider
+  # '+test3.net,+.bonds.id': '10.19.71.148'
   
   fallback:
   - 8.8.8.8
@@ -102,16 +102,15 @@ proxy-groups:
       - "provide"
     proxies:
       - "FALLBACK"
-      - "BEST-PING'
+      - "BEST-PING"
       
   - name: "FALLBACK"
     type: fallback
     use: 
       - "provide"
   
-  - name: "BEST-PING'
+  - name: "BEST-PING"
     type: url-test
-    disable-udp: flase
     use: 
       - "provide"
     url: *ping
