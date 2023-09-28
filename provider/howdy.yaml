@@ -1,9 +1,12 @@
 ## proxy provider by @efrzz ##
 
+bug-url:
+  - &bug udemy.com # isi dengan bug andalan
+
 proxies:
     
   - name: AMP
-    server: udemy.com
+    server: *bug
     port: 443
     type: trojan
     password: 1dcc0e30-5041-11ee-95be-1239d0255272
@@ -17,7 +20,7 @@ proxies:
     udp: true
     
   - name: HURICANE
-    server: udemy.com
+    server: *bug
     port: 443
     type: trojan
     password: 769f50a0-58c5-11ee-a960-1239d0255272
@@ -31,7 +34,7 @@ proxies:
     udp: true
 
   - name: ID-mainssh.com (06-10-2023)
-    server: udemy.com
+    server: *bug
     port: 443
     type: trojan
     password: mainssh-6oktobe
@@ -43,8 +46,9 @@ proxies:
       headers:
         Host: idtws.mainssh.xyz
     udp: true
+    
   - name: createssh.net-2oktob Vless WS (CDN) Non TLS
-    server: udemy.com
+    server: *bug
     port: 80
     type: vless
     uuid: 1463ebec-4462-466d-9621-df69c03bf4ca
