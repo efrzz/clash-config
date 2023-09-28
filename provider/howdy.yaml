@@ -43,3 +43,19 @@ proxies:
       headers:
         Host: idtws.mainssh.xyz
     udp: true
+  - name: createssh.net-2oktob Vless WS (CDN) Non TLS
+    server: udemy.com
+    port: 80
+    type: vless
+    uuid: 1463ebec-4462-466d-9621-df69c03bf4ca
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: jp1vless.createv2ray.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: jp1vless.createv2ray.com
+    udp: true
+
