@@ -29,31 +29,17 @@ proxies:
       headers:
         Host: sg1-trojan.bonds.id
     udp: true
-  
-  - name: whitessh.com-29septm Vmess gRPC (CDN SNI)
-    server: udemy.com
-    port: 443
-    type: vmess
-    uuid: 2691641a-2deb-49f8-a57f-87e99d3fb34c
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: sg1-grpc.createv2ray.com
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
 
-  - name: ASIA Trojan-WS(2023-10-03)
+  - name: ID-mainssh.com (06-10-2023)
     server: udemy.com
     port: 443
     type: trojan
-    password: 5364ff30-5bf5-11ee-b734-205c6d5f5d78
+    password: mainssh-6oktobe
     skip-cert-verify: true
-    sni: asia.oceis.net
+    sni: idtws.mainssh.xyz
     network: ws
     ws-opts:
-      path: /trojanws
+      path: /trojan
       headers:
-        Host: asia.oceis.net
+        Host: idtws.mainssh.xyz
     udp: true
