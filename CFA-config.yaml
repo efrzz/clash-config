@@ -1,0 +1,144 @@
+##### CLASH CONFIG BY @efrzz ####
+
+redir-port: 9797
+tproxy-port: 0
+# socks-port: 7891
+# mixed-port: 7893
+mode: rule
+log-level: info
+allow-lan: true
+unified-delay: true
+external-controller: 0.0.0.0:9090
+# secret: '123456'
+bind-address: "*"
+external-ui: /data/adb/box/clash/metacubexd #sesuaikan dengan path folder dashboard
+
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:1053
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - "*.lan"
+  # - "*.localdomain"
+  # - "*.example"
+  # - "*.invalid"
+  # - "*.localhost"
+  # - "*.test"
+  # - "*.local"
+  # - "*.home.arpa"
+  
+  default-nameserver:
+  - 8.8.8.8 #google
+  - 8.8.4.4 #google
+  - 1.1.1.1 #cloudflare
+  - 1.0.0.1 #cloudflare
+  # - 9.9.9.9 #quaddns
+  # - 9.9.9.11 #quaddns
+  # - 192.168.170.28 #Tsel
+  # - 192.168.178.28 #Tsel
+  # - 192.168.130.28 #Tsel
+  # - 112.215.203.248 #XL
+  # - 112.215.203.254 #XL
+  # - 10.19.71.148 #IM3
+  # - 10.19.71.150 #IM3
+  
+  nameserver:
+  - 8.8.8.8 #google
+  - 8.8.4.4 #google
+  - 1.1.1.1 #cloudflare
+  - 1.0.0.1 #cloudflare
+  # - 9.9.9.9 #quaddns
+  # - 9.9.9.11 #quaddns
+  # - 192.168.170.28 #Tsel
+  # - 192.168.178.28 #Tsel
+  # - 192.168.130.28 #Tsel
+  # - 112.215.203.248 #XL
+  # - 112.215.203.254 #XL
+  # - 10.19.71.148 #IM3
+  # - 10.19.71.150 #IM3
+
+## Untuk dns provider diatas bisa dilihat lewat app Devcheck ##
+
+  nameserver-policy:
+  # bug:DNSprovider
+  '+.udemy.com': '10.19.71.148'
+  # server:DNSprovider
+  # '+test3.net,+.bonds.id': '10.19.71.148'
+  
+  fallback:
+  - 8.8.8.8
+  - 1.1.1.1
+  # - 9.9.9.9
+  
+profile:
+  store-selected: true
+  store-fakeip: true
+  store-fake-ip: true
+  
+tun:
+  enable: true
+  device: utun
+  stack: system
+  dns-hijack:
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53
+  - any:53
+  - tcp://any:53
+  auto-route : true
+  auto-detect-interface: true
+
+ping-url:
+  # - &ping "http://ping.xmbb.net"
+  # - &ping "http://www.gstatic.com/generate_204"
+  - &ping "http://clients3.google.com"
+
+proxies:
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    use:
+      - "provide"
+    proxies:
+      - "FALLBACK"
+      - "BEST-PING"
+      
+  - name: "FALLBACK"
+    type: fallback
+    use: 
+      - "provide"
+  
+  - name: "BEST-PING"
+    type: url-test
+    use: 
+      - "provide"
+    url: *ping
+    interval: 300
+    
+  - name: "ADBLOCK"
+    type: select
+    proxies:
+      - "REJECT"
+      - "PROXY"
+      
+proxy-providers:
+  "provide":
+    type: http
+    url: https://raw.githubusercontent.com/efrzz/clash-config/main/provider/howdy.yaml
+    path: ./sub-howdy.yaml
+    healthcheck:
+      enable: true
+      url: *ping
+      interval: 300
+
+rule-providers:
+  "Ads":
+    type: http
+    behavior: classical
+    path: "./rule_provider_BlockAds.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
+    
+rules:
+  - RULE-SET,Ads,ADBLOCK
+  - MATCH,PROXY
