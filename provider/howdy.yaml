@@ -46,20 +46,20 @@ proxies:
       headers:
         Host: idtws.mainssh.xyz
     udp: true
-    
-  - name: createssh.net-2oktob Vless WS (CDN) Non TLS
+
+  - name: createssh.net-2oktbr Vmess WS (CDN) Non TLS
+    type: vmess
     server: *bug
     port: 80
-    type: vless
-    uuid: 1463ebec-4462-466d-9621-df69c03bf4ca
+    uuid: 38874231-3956-49fc-94af-c401d18fa07f
+    alterId: 0
     cipher: auto
+    udp: true
     tls: false
     skip-cert-verify: false
-    servername: jp1vless.createv2ray.com
+    servername: jp1.createv2ray.com
     network: ws
     ws-opts:
-      path: /vless
+      path: /vmess
       headers:
-        Host: jp1vless.createv2ray.com
-    udp: true
-
+        Host: jp1.createv2ray.com
