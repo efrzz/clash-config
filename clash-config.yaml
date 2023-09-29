@@ -63,14 +63,10 @@ dns:
 
   nameserver-policy:
   # server:DNSprovider
-  '+test3.net,+.bonds.id,+.mainssh.xyz,+.createv2ray.com':
-  - '10.19.71.148' #IM3
-  - '112.215.203.248' #XL
+  '+test3.net,+.bonds.id,+.mainssh.xyz,+.createv2ray.com': '10.19.71.148' # IM3
   
   # bug:DNSprovider
-  '+.udemy.com,+skillacademy.com':
-  - '10.19.71.148' #IM3
-  - '112.215.203.248' #XL
+  '+.udemy.com,+skillacademy.com': '10.19.71.148' # IM3
   
   fallback:
   # - 8.8.8.8
