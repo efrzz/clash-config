@@ -60,9 +60,9 @@ dns:
 
 ## Untuk dns provider diatas bisa dilihat lewat app Devcheck ##
 
-  nameserver-policy:
+  # nameserver-policy:
   # bug:DNSprovider
-  '+.udemy.com': '10.19.71.148'
+  # '+.udemy.com': '10.19.71.148'
   
   # server:DNSprovider
   # '+test3.net,+.bonds.id': '10.19.71.148'
