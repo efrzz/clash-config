@@ -30,10 +30,10 @@ dns:
   # - "*.home.arpa"
   
   default-nameserver:
-  - 8.8.8.8 #google
-  - 8.8.4.4 #google
-  - 1.1.1.1 #cloudflare
-  - 1.0.0.1 #cloudflare
+  # - 8.8.8.8 #google
+  # - 8.8.4.4 #google
+  - "1.1.1.1" #cloudflare
+  - "1.0.0.1" #cloudflare
   # - 9.9.9.9 #quaddns
   # - 9.9.9.11 #quaddns
   # - 192.168.170.28 #Tsel
@@ -45,10 +45,10 @@ dns:
   # - 10.19.71.150 #IM3
   
   nameserver:
-  - 8.8.8.8 #google
-  - 8.8.4.4 #google
-  - 1.1.1.1 #cloudflare
-  - 1.0.0.1 #cloudflare
+  # - 8.8.8.8 #google
+  # - 8.8.4.4 #google
+  - "1.1.1.1" #cloudflare
+  - "1.0.0.1" #cloudflare
   # - 9.9.9.9 #quaddns
   # - 9.9.9.11 #quaddns
   # - 192.168.170.28 #Tsel
@@ -73,8 +73,8 @@ dns:
   - '112.215.203.248' #XL
   
   fallback:
-  - 8.8.8.8
-  - 1.1.1.1
+  # - 8.8.8.8
+  - "1.1.1.1"
   # - 9.9.9.9
   
 profile:
