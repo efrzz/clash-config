@@ -125,8 +125,8 @@ proxy-groups:
 proxy-providers:
   "provide":
     type: http
-    url: https://raw.githubusercontent.com/efrzz/clash-config/main/provider/howdy.yaml
-    path: ./sub-howdy.yaml
+    url: https://raw.githubusercontent.com/efrzz/clash-config/main/provider/proxy-provider.yaml
+    path: ./proxy-provider.yaml
     healthcheck:
       enable: true
       url: *ping
