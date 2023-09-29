@@ -11,7 +11,6 @@ unified-delay: true
 external-controller: 0.0.0.0:9090
 # secret: '123456'
 bind-address: "*"
-external-ui: /data/adb/box/clash/metacubexd #sesuaikan dengan path folder dashboard
 
 dns:
   enable: true
@@ -64,6 +63,7 @@ dns:
   nameserver-policy:
   # bug:DNSprovider
   '+.udemy.com': '10.19.71.148'
+  
   # server:DNSprovider
   # '+test3.net,+.bonds.id': '10.19.71.148'
   
