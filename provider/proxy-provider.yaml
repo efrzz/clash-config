@@ -1,7 +1,7 @@
 ## proxy provider by @efrzz ##
 
 bug-url:
-  - &bug udemy.com # isi dengan bug andalan
+  - &bug ajakteman.skillacademy.com # isi dengan bug andalan
 
 proxies:
     
