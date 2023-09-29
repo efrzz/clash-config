@@ -62,10 +62,15 @@ dns:
 ## Untuk dns provider diatas bisa dilihat lewat app Devcheck ##
 
   nameserver-policy:
-  # bug:DNSprovider
-  '+.udemy.com': '10.19.71.148'
   # server:DNSprovider
-  # '+test3.net,+.bonds.id': '10.19.71.148'
+  '+test3.net,+.bonds.id,+.mainssh.xyz,+.createv2ray.com':
+  - '10.19.71.148' #IM3
+  - '112.215.203.248' #XL
+  
+  # bug:DNSprovider
+  '+.udemy.com,+skillacademy.com':
+  - '10.19.71.148' #IM3
+  - '112.215.203.248' #XL
   
   fallback:
   - 8.8.8.8
