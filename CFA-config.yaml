@@ -124,7 +124,7 @@ proxy-groups:
       
 proxy-providers:
   "provide":
-    type: http
+    type: file
     url: https://raw.githubusercontent.com/efrzz/clash-config/main/provider/proxy-provider.yaml
     path: ./proxy-provider.yaml
     healthcheck:
