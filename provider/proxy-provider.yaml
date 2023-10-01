@@ -46,21 +46,7 @@ proxies:
       headers:
         Host: idtws.mainssh.xyz
     udp: true
-
-  - name: onlyssh-15otkobb-ws
-    server: ajakteman.skillacademy.com
-    port: 443
-    type: trojan
-    password: 4a62be09-1d12-40c1-8b1f-6cb7ba17500e
-    skip-cert-verify: true
-    sni: id1.kitu.xyz
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: id1.kitu.xyz
-    udp: true
-    
+   
   - name: onlyssh-15otkobb-gRpc
     server: ajakteman.skillacademy.com
     port: 443
@@ -70,5 +56,5 @@ proxies:
     sni: id1.kitu.xyz
     network: grpc
     grpc-opts:
-      grpc-service-name: /trojan-grpc
+      grpc-service-name: trojan-grpc
     udp: true
