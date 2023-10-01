@@ -47,19 +47,28 @@ proxies:
         Host: idtws.mainssh.xyz
     udp: true
 
-  - name: createssh.net-2oktbr Vmess WS (CDN) Non TLS
-    type: vmess
-    server: *bug
-    port: 80
-    uuid: 38874231-3956-49fc-94af-c401d18fa07f
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    skip-cert-verify: false
-    servername: jp1.createv2ray.com
+  - name: onlyssh-15otkobb-ws
+    server: ajakteman.skillacademy.com
+    port: 443
+    type: trojan
+    password: 4a62be09-1d12-40c1-8b1f-6cb7ba17500e
+    skip-cert-verify: true
+    sni: id1.kitu.xyz
     network: ws
     ws-opts:
-      path: /vmess
+      path: /trojan-ws
       headers:
-        Host: jp1.createv2ray.com
+        Host: id1.kitu.xyz
+    udp: true
+    
+  - name: onlyssh-15otkobb-gRpc
+    server: ajakteman.skillacademy.com
+    port: 443
+    type: trojan
+    password: 4a62be09-1d12-40c1-8b1f-6cb7ba17500e
+    skip-cert-verify: true
+    sni: id1.kitu.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /trojan-grpc
+    udp: true
