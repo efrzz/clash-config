@@ -46,37 +46,3 @@ proxies:
     udp: true
 
 # ================================================================ #
-    
-  - name: US-DaBai Holiday
-    server: *bug
-    port: 2052
-    type: vmess
-    uuid: ceb808a3-ae43-3602-b74a-109d7526b9b5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: a.cn-db.top
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: a.cn-db.top
-    udp: true
-    
-  - name: HK-DaBai
-    server: *bug
-    port: 2082
-    type: vmess
-    uuid: ceb808a3-ae43-3602-b74a-109d7526b9b5
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: a.db-link.in
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: a.db-link.in
-    udp: true
