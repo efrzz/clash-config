@@ -1,7 +1,7 @@
 ## proxy provider by @efrzz ##
 
 bug-url:
-  - &bug ajakteman.skillacademy.com # isi dengan bug andalan
+  - &bug 104.18.25.139 # isi dengan bug andalan
 
 proxies:
     
@@ -43,6 +43,21 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: trojan-grpc
+    udp: true
+    
+  - name: serverssh-7novebr
+    server: *bug
+    port: 443
+    type: vmess
+    uuid: 8ac59ac9-bbc0-4243-8c91-5cc6afedbe6b
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgm2grpc.serverip.my.id
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
     udp: true
 
 # ================================================================ #
