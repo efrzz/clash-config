@@ -5,7 +5,7 @@ bug-url:
 
 proxies:
     
-  - name: AMP
+  - name: 🇮🇩 AMP
     server: *bug
     port: 443
     type: trojan
@@ -19,7 +19,7 @@ proxies:
         Host: sg-2.test3.net
     udp: true
     
-  - name: HURICANE
+  - name: 🇸🇬 HURICANE
     server: *bug
     port: 443
     type: trojan
@@ -33,7 +33,7 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
    
-  - name: onlyssh-15otkobb-gRpc
+  - name: 🇮🇩 onlyssh-15otkobb-gRpc
     server: *bug
     port: 443
     type: trojan
@@ -45,7 +45,7 @@ proxies:
       grpc-service-name: trojan-grpc
     udp: true
     
-  - name: serverssh-7novebr
+  - name: 🇸🇬 serverssh-7novebr
     server: *bug
     port: 443
     type: vmess
