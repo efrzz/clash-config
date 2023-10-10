@@ -33,7 +33,7 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
    
-  - name: 🇮🇩 onlyssh-15otkobb-gRpc
+  - name: 🇮🇩 onlyssh-15otkobb
     server: *bug
     port: 443
     type: trojan
@@ -45,7 +45,7 @@ proxies:
       grpc-service-name: trojan-grpc
     udp: true
     
-  - name: 🇸🇬 serverssh-7novebr
+  - name: 🇸🇬 serverssh-7nov
     server: *bug
     port: 443
     type: vmess
