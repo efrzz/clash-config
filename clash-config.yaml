@@ -39,8 +39,8 @@ dns:
   # - 192.168.170.28 #Tsel
   # - 192.168.178.28 #Tsel
   # - 192.168.130.28 #Tsel
-  # - 112.215.203.248 #XL
-  # - 112.215.203.254 #XL
+  - "112.215.203.248" #XL
+  - "112.215.203.254" #XL
   # - 10.19.71.148 #IM3
   # - 10.19.71.150 #IM3
   
@@ -54,8 +54,8 @@ dns:
   # - 192.168.170.28 #Tsel
   # - 192.168.178.28 #Tsel
   # - 192.168.130.28 #Tsel
-  # - 112.215.203.248 #XL
-  # - 112.215.203.254 #XL
+  - "112.215.203.248" #XL
+  - "112.215.203.254" #XL
   # - 10.19.71.148 #IM3
   # - 10.19.71.150 #IM3
 
@@ -63,16 +63,28 @@ dns:
 
   nameserver-policy:
   # server:DNSprovider
-  '+test3.net,+.bonds.id,+.mainssh.xyz,+.createv2ray.com': '10.19.71.148' # IM3
+  '+test3.net,+.bonds.id,+.mainssh.xyz,+.createv2ray.com': '112.215.203.248' # XL
   
   # bug:DNSprovider
-  '+.udemy.com,+skillacademy.com': '10.19.71.148' # IM3
+  '+.linefriends.com,+.udemy.com,+skillacademy.com': '112.215.203.248' # XL
   
   fallback:
   # - 8.8.8.8
   - "1.1.1.1"
   # - 9.9.9.9
   
+# ========================== #
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+ # ========================== #
+ 
 profile:
   store-selected: true
   store-fakeip: true
