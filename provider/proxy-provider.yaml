@@ -61,3 +61,17 @@ proxies:
     udp: true
 
 ## ======================================= ##
+
+  - name: whitessh.com-14berok
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: 93717a46-2fb8-42f2-91bd-a9c6bd2896ba
+    skip-cert-verify: true
+    sni: sg4trws.createv2ray.com
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sg4trws.createv2ray.com
+    udp: true
