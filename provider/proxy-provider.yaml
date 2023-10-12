@@ -9,7 +9,7 @@ proxies:
     server: *bug
     port: 443
     type: trojan
-    password: 1dcc0e30-5041-11ee-95be-1239d0255272
+    password: 8745aaa0-68ef-11ee-8573-1239d0255272
     skip-cert-verify: true
     sni: sg-2.test3.net
     network: ws
@@ -62,7 +62,7 @@ proxies:
 
 ## ======================================= ##
 
-  - name: whitessh.com-14berok
+  - name: 🇸🇬 whitessh.com-14berok
     server: sogood.linefriends.com
     port: 443
     type: trojan
