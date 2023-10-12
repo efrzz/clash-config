@@ -75,3 +75,20 @@ proxies:
       headers:
         Host: sg4trws.createv2ray.com
     udp: true
+
+  - name: F-移动|国庆活动进行中...
+    server: sogood.linefriends.com
+    port: 2052
+    type: vmess
+    uuid: ceb808a3-ae43-3602-b74a-109d7526b9b5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: a.db-link.in
+    network: ws
+    ws-opts:
+      path: /db00
+      headers:
+        Host: a.db-link.in
+    udp: true
