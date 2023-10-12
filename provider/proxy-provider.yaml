@@ -76,23 +76,10 @@ proxies:
 
 ## ======================================= ##
 
-  - name: 🇸🇬 whitessh.com-14berok
-    server: sogood.linefriends.com
-    port: 443
-    type: trojan
-    password: 93717a46-2fb8-42f2-91bd-a9c6bd2896ba
-    skip-cert-verify: true
-    sni: sg4trws.createv2ray.com
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sg4trws.createv2ray.com
-    udp: true
-
-  - name: F-移动|国庆活动进行中...
-    server: sogood.linefriends.com
-    port: 2052
+## EXP 01 NOVEMBER 2023 (999 Gb)
+  - name: 🇭🇰 F-移动|国庆活动进行中...
+    server: *bug
+    port: 2082
     type: vmess
     uuid: ceb808a3-ae43-3602-b74a-109d7526b9b5
     alterId: 0
@@ -105,4 +92,54 @@ proxies:
       path: /db00
       headers:
         Host: a.db-link.in
+    udp: true
+    
+## EXP 13 NOVEMBER 2023 (200 Gb)
+  - name: 🇸🇬 新加坡01-南方移动
+    server: *bug
+    port: 80
+    type: vmess
+    uuid: f30b250d-7201-49d4-9081-056c953118f3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgyd1.xingsu.fun
+    network: ws
+    ws-opts:
+      path: /xingsu
+      headers:
+        Host: sgyd1.xingsu.fun
+    udp: true
+  - name: 🇸🇬 新加坡02-南方移动
+    server: *bug
+    port: 80
+    type: vmess
+    uuid: f30b250d-7201-49d4-9081-056c953118f3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgyd2.xingsu.fun
+    network: ws
+    ws-opts:
+      path: /xingsu
+      headers:
+        Host: sgyd2.xingsu.fun
+    udp: true
+  - name: 🇯🇵 日本01-南方移动
+    server: *bug
+    port: 80
+    type: vmess
+    uuid: f30b250d-7201-49d4-9081-056c953118f3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: jpyd1.xingsu.fun
+    network: ws
+    ws-opts:
+      path: /xingsu
+      headers:
+        Host: jpyd1.xingsu.fun
     udp: true
