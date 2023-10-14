@@ -47,16 +47,19 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
    
-  - name: 🇮🇩 onlyssh-15otkobb
-    server: *bug
+  - name: 🇮🇩 onlyssh-22oktobr
+    server: ajakteman.skillacademy.com
     port: 443
-    type: trojan
-    password: 4a62be09-1d12-40c1-8b1f-6cb7ba17500e
+    type: vmess
+    uuid: 36289899-ffc7-45c6-8f0e-343059c88b53
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: id1.kitu.xyz
+    servername: id1.kitu.xyz
     network: grpc
     grpc-opts:
-      grpc-service-name: trojan-grpc
+      grpc-service-name: vmess-grpc
     udp: true
     
   - name: 🇸🇬 serverssh-7nov
