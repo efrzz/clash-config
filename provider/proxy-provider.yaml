@@ -19,19 +19,19 @@ proxies:
         Host: sg-2.test3.net
     udp: true
 
-  - name: 🇮🇩 HERZA
-    server: *bug
-    port: 443
-    type: trojan
-    password: 5ad60600-68f0-11ee-9d85-1239d0255272
-    skip-cert-verify: true
-    sni: id-1.test3.net
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: id-1.test3.net
-    udp: true
+ # - name: 🇮🇩 HERZA
+ #   server: *bug
+ #   port: 443
+ #   type: trojan
+ #   password: 5ad60600-68f0-11ee-9d85-1239d0255272
+ #   skip-cert-verify: true
+ #   sni: id-1.test3.net
+ #   network: ws
+ #   ws-opts:
+ #     path: /howdy
+ #     headers:
+ #       Host: id-1.test3.net
+ #   udp: true
     
   - name: 🇸🇬 HURICANE
     server: *bug
