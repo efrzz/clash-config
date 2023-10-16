@@ -77,6 +77,18 @@ proxies:
       grpc-service-name: grpc
     udp: true
 
+  - name: 🇮🇩 mainssh.com-23Oktobre
+    server: *bug
+    port: 443
+    type: trojan
+    password: mainssh-23oktobre
+    skip-cert-verify: true
+    sni: idtgrpc.mainssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojangrpc
+    udp: true
+
 ## ======================================= ##
 
 ## EXP 01 NOVEMBER 2023 (999 Gb)
