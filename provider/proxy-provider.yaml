@@ -48,7 +48,7 @@ proxies:
     udp: true
    
   - name: 🇮🇩 onlyssh-22oktobr
-    server: ajakteman.skillacademy.com
+    server: *bug
     port: 443
     type: vmess
     uuid: 36289899-ffc7-45c6-8f0e-343059c88b53
