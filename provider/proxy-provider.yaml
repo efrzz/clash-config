@@ -19,19 +19,19 @@ proxies:
         Host: sg-2.test3.net
     udp: true
 
- # - name: 🇮🇩 HERZA
- #   server: *bug
- #   port: 443
- #   type: trojan
- #   password: 5ad60600-68f0-11ee-9d85-1239d0255272
- #   skip-cert-verify: true
- #   sni: id-1.test3.net
- #   network: ws
- #   ws-opts:
- #     path: /howdy
- #     headers:
- #       Host: id-1.test3.net
- #   udp: true
+  - name: 🇮🇩 HERZA
+    server: *bug
+    port: 443
+    type: trojan
+    password: 5ad60600-68f0-11ee-9d85-1239d0255272
+    skip-cert-verify: true
+    sni: id-1.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-1.test3.net
+    udp: true
     
   - name: 🇸🇬 HURICANE
     server: *bug
@@ -62,21 +62,38 @@ proxies:
       grpc-service-name: vmess-grpc
     udp: true
     
-  - name: 🇸🇬 serverssh-7nov
-    server: *bug
+#  - name: 🇸🇬 serverssh-7nov
+#    server: *bug
+#    port: 443
+#    type: vmess
+#    uuid: 8ac59ac9-bbc0-4243-8c91-5cc6afedbe6b
+#    alterId: 0
+#    cipher: auto
+#    tls: true
+#    skip-cert-verify: true
+#    servername: sgm2grpc.serverip.my.id
+#    network: grpc
+#    grpc-opts:
+#      grpc-service-name: grpc
+#    udp: true
+
+  - name: 🇸🇬🎓 masterssh_16Nov
+    server: ajakteman.skillacademy.com
     port: 443
     type: vmess
-    uuid: 8ac59ac9-bbc0-4243-8c91-5cc6afedbe6b
+    uuid: 7c1f8e01-8394-49b3-8c0f-df5fb3a53c9e
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgm2grpc.serverip.my.id
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
+    servername: sg.serverfast.pw
+    network: ws
+    ws-opts:
+      path: /v2ray-vmess/tls
+      headers:
+        Host: sg.serverfast.pw
     udp: true
-
+    
   - name: 🇮🇩 mainssh.com-23Oktobre
     server: *bug
     port: 443
