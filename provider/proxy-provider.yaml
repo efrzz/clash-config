@@ -7,7 +7,7 @@ proxies:
 
 ## EDUKASI ##
 
-  - name: 🇮🇩🎓opentunnel-19Nov
+  - name: 🇮🇩🎓opentunnel_19Nov
     server: idt-1.opensvr.net
     port: 443
     type: trojan
