@@ -5,6 +5,30 @@ bug-url:
 
 proxies:
 
+## listvpn ##
+  - name: v2onelist
+    server: ajakteman.skillacademy.com
+    port: 35768
+    type: vmess
+    uuid: 3bab04a4-a26d-4569-a3f2-57c7e4843a3d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 15.235.141.166
+    udp: true
+    
+  - name: vLonelist
+    server: ajakteman.skillacademy.com
+    port: 11245
+    type: vless
+    uuid: e20dacf5-4cee-4176-c4b2-4eba88978556
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 15.235.141.166
+    udp: true
+
 ## EDUKASI ##
 
   - name: 🇮🇩🎓onlyssh-25oktob
