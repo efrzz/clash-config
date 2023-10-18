@@ -7,16 +7,23 @@ proxies:
 
 ## EDUKASI ##
 
-  - name: 🇮🇩🎓opentunnel_19Nov
-    server: idt-1.opensvr.net
-    port: 443
-    type: trojan
-    password: opentunnel.net-19novem
+  - name: 🇮🇩🎓onlyssh-25oktob
+    server: ajakteman.skillacademy.com
+    port: 80
+    type: vless
+    uuid: 11c6c47f-42ea-4681-8b9c-ce659f2ac6f0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: ajakteman.skillacademy.com
+    servername: id1.kitu.xyz
+    network: ws
+    ws-opts:
+      path: /vless-ws/
+      headers:
+        Host: id1.kitu.xyz
     udp: true
     
-  - name: 🇸🇬🎓 masterssh_16Nov
+  - name: 🇸🇬🎓masterssh_16Nov
     server: ajakteman.skillacademy.com
     port: 443
     type: vmess
