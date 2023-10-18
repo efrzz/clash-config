@@ -1,24 +1,14 @@
 ## proxy provider by @efrzz ##
 
 bug-url:
-  - &line sogood.linefriends.com # bug flex line
-  - &edu ajakteman.skillacademy.com # bug edukasi
+  - &bug sogood.linefriends.com # isi dengan bug andalan
 
 proxies:
 
-### EDUKASI ###
-
-  - name: 🇮🇩🎓 opentunnel-19Nov
-    server: idt-1.opensvr.net
-    port: 443
-    type: trojan
-    password: opentunnel.net-19novem
-    skip-cert-verify: true
-    sni: ajakteman.skillacademy.com
-    udp: true
+## EDUKASI ##
 
   - name: 🇸🇬🎓 masterssh_16Nov
-    server: *edu
+    server: ajakteman.skillacademy.com
     port: 443
     type: vmess
     uuid: 7c1f8e01-8394-49b3-8c0f-df5fb3a53c9e
@@ -33,9 +23,10 @@ proxies:
       headers:
         Host: sg.serverfast.pw
     udp: true
-
-### FLEX LINE ###    
-
+    
+    
+## FLEX LINE ##
+    
   - name: 🇮🇩 AMP
     server: *bug
     port: 443
