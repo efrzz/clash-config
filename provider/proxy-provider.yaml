@@ -23,21 +23,21 @@ proxies:
         Host: id1.kitu.xyz
     udp: true
     
-  - name: 🇸🇬🎓greenssh-25oktb
+  - name: vpn.sshs8.com-22Okt
     server: ajakteman.skillacademy.com
     port: 80
     type: vmess
-    uuid: 162f2bff-f356-45c4-b4e1-299a1f418d11
+    uuid: dd7406cf-6532-4e51-b374-f7ed64529ac3
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: sg-vmess.greenssh.xyz
+    servername: si5ultara.09vpn.com
     network: ws
     ws-opts:
-      path: /vmess
+      path: /vmess/
       headers:
-        Host: sg-vmess.greenssh.xyz
+        Host: si5ultara.09vpn.com
     udp: true
     
     
