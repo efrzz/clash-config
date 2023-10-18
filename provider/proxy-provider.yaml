@@ -7,6 +7,15 @@ proxies:
 
 ## EDUKASI ##
 
+  - name: 🇮🇩🎓opentunnel-19Nov
+    server: idt-1.opensvr.net
+    port: 443
+    type: trojan
+    password: opentunnel.net-19novem
+    skip-cert-verify: true
+    sni: ajakteman.skillacademy.com
+    udp: true
+    
   - name: 🇸🇬🎓 masterssh_16Nov
     server: ajakteman.skillacademy.com
     port: 443
