@@ -1,10 +1,41 @@
 ## proxy provider by @efrzz ##
 
 bug-url:
-  - &bug sogood.linefriends.com # isi dengan bug andalan
+  - &line sogood.linefriends.com # bug flex line
+  - &edu ajakteman.skillacademy.com # bug edukasi
 
 proxies:
-    
+
+### EDUKASI ###
+
+  - name: 🇮🇩🎓 opentunnel-19Nov
+    server: idt-1.opensvr.net
+    port: 443
+    type: trojan
+    password: opentunnel.net-19novem
+    skip-cert-verify: true
+    sni: ajakteman.skillacademy.com
+    udp: true
+
+  - name: 🇸🇬🎓 masterssh_16Nov
+    server: *edu
+    port: 443
+    type: vmess
+    uuid: 7c1f8e01-8394-49b3-8c0f-df5fb3a53c9e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.serverfast.pw
+    network: ws
+    ws-opts:
+      path: /v2ray-vmess/tls
+      headers:
+        Host: sg.serverfast.pw
+    udp: true
+
+### FLEX LINE ###    
+
   - name: 🇮🇩 AMP
     server: *bug
     port: 443
@@ -76,23 +107,6 @@ proxies:
 #    grpc-opts:
 #      grpc-service-name: grpc
 #    udp: true
-
-  - name: 🇸🇬🎓 masterssh_16Nov
-    server: ajakteman.skillacademy.com
-    port: 443
-    type: vmess
-    uuid: 7c1f8e01-8394-49b3-8c0f-df5fb3a53c9e
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg.serverfast.pw
-    network: ws
-    ws-opts:
-      path: /v2ray-vmess/tls
-      headers:
-        Host: sg.serverfast.pw
-    udp: true
     
   - name: 🇮🇩 mainssh.com-23Oktobre
     server: *bug
