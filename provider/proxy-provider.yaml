@@ -23,21 +23,21 @@ proxies:
         Host: id1.kitu.xyz
     udp: true
     
-  - name: 🇸🇬🎓masterssh_16Nov
+  - name: 🇸🇬🎓greenssh-25oktb
     server: ajakteman.skillacademy.com
-    port: 443
+    port: 80
     type: vmess
-    uuid: 7c1f8e01-8394-49b3-8c0f-df5fb3a53c9e
+    uuid: 162f2bff-f356-45c4-b4e1-299a1f418d11
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: vm.sg.serverfast.pw
+    servername: sg-vmess.greenssh.xyz
     network: ws
     ws-opts:
-      path: /v2ray-vmess/tls
+      path: /vmess
       headers:
-        Host: vm.sg.serverfast.pw
+        Host: sg-vmess.greenssh.xyz
     udp: true
     
     
