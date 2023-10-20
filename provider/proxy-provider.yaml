@@ -100,20 +100,20 @@ proxies:
       grpc-service-name: vmess-grpc
     udp: true
     
-#  - name: 🇸🇬 serverssh-7nov
-#    server: *bug
-#    port: 443
-#    type: vmess
-#    uuid: 8ac59ac9-bbc0-4243-8c91-5cc6afedbe6b
-#    alterId: 0
-#    cipher: auto
-#    tls: true
-#    skip-cert-verify: true
-#    servername: sgm2grpc.serverip.my.id
-#    network: grpc
-#    grpc-opts:
-#      grpc-service-name: grpc
-#    udp: true
+  - name: 🇸🇬 serverssh-7nov
+    server: *bug
+    port: 443
+    type: vmess
+    uuid: 8ac59ac9-bbc0-4243-8c91-5cc6afedbe6b
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgm2grpc.serverip.my.id
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
     
   - name: 🇮🇩 mainssh.com-23Oktobre
     server: *bug
