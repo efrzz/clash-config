@@ -127,6 +127,23 @@ proxies:
       grpc-service-name: trojangrpc
     udp: true
 
+  - name: 24oktob-vpnjantit.com
+    server: *bug
+    port: 443
+    type: vmess
+    uuid: 3e2fec02-700c-11ee-b230-efbd44a47385
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: indo7.vpnjantit.com
+    alterId: 0
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo7.vpnjantit.com
+
 ## ======================================= ##
 
 ## EXP 01 NOVEMBER 2023 (999 Gb)
