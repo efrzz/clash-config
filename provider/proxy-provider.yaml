@@ -23,7 +23,7 @@ proxies:
         Host: id1.kitu.xyz
     udp: true
     
-  - name: vpn.sshs8.com-22Okt
+  - name: 🎓sshs8.com-22Okt
     server: ajakteman.skillacademy.com
     port: 80
     type: vmess
