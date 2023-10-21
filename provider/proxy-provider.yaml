@@ -130,14 +130,14 @@ proxies:
 ## ======================================= ##
 
 ## EXP 01 NOVEMBER 2023 (999 Gb)
-  - name: 🇭🇰 F-移动|国庆活动进行中...
+  - name: 更新订阅|同步最新节点信息|移动
     server: *bug
     port: 443
     type: vmess
     uuid: ceb808a3-ae43-3602-b74a-109d7526b9b5
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
     servername: b.db-link.in
     network: ws
