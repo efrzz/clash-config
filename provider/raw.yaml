@@ -22,11 +22,11 @@ proxies:
       grpc-service-name: vlessgrpc
     udp: true
     
-  - name: 🇮🇩jagoanssh-20Nov(Ini)
+  - name: 🇮🇩jagoanssh-26Nov(Ini)
     server: *bug
     port: 443
     type: vless
-    uuid: b80afcfb-1314-46cc-bcaf-1f086c04de3f
+    uuid: 243c8d7c-d889-49a3-a098-4db028f0e70d
     cipher: auto
     tls: true
     skip-cert-verify: true
