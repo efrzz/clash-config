@@ -1,3 +1,4 @@
+==== by @efrzz ====
 
 bug-url:
   - &bug "df.game.naver.com" # bug edukasi
@@ -105,55 +106,3 @@ proxies:
     
 ####################################
 ####################################
-     
-  # - name: 🇺🇲📒GetAFreeNode.com
-    # server: ajakteman.skillacademy.com
-    # port: 443
-    # type: vmess
-    # uuid: 316EA4F6-EDAD-479D-8C9E-9C2F366144CD
-    # alterId: 0
-    # cipher: auto
-    # tls: true
-    # skip-cert-verify: true
-    # servername: LosAngeles.gafn.online
-    # network: ws
-    # ws-opts:
-      # path: /speedtest
-      # headers:
-        # Host: LosAngeles.gafn.online
-    # udp: true
-    
-  # - name: 🇫🇷GetAFreeNode.com
-    # server: ajakteman.skillacademy.com
-    # port: 443
-    # type: vmess
-    # uuid: 316EA4F6-EDAD-479D-8C9E-9C2F366144CD
-    # alterId: 0
-    # cipher: auto
-    # tls: true
-    # skip-cert-verify: true
-    # servername: Lille.gafn.online
-    # network: ws
-    # ws-opts:
-      # path: /speedtest
-      # headers:
-        # Host: Lille.gafn.online
-    # udp: true
-   
-  # - name: 🇺🇸 _US_美国_65
-    # server: ajakteman.skillacademy.com
-    # port: 443
-    # type: vmess
-    # uuid: 62b024bb-3e45-41eb-e8ff-60502a4e791d
-    # cipher: auto
-    # tls: true
-    # udp: true
-    # skip-cert-verify: true
-    # network: ws
-    # servername: a3.mianfenyun012.eu.org
-    # alterId: 0
-    # ws-opts:
-      # path: /vui2
-      # headers:
-        # Host: a3.mianfenyun012.eu.org
-        
