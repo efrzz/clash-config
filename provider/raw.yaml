@@ -37,12 +37,13 @@ proxies:
       headers:
         Host: id2vless.ipservers.xyz
     udp: true
+    ## https://www.jagoanssh.com/?do=create-xray&filter=321
 
-  - name: 🇮🇩serverssh-20Nov(Biz)
+  - name: 🇮🇩serverssh-26Nov(Biz)
     server: *bug
     port: 443
     type: vless
-    uuid: 753b2e50-9037-479d-94c0-6e1e7dd33cff
+    uuid: 3383999e-7970-44dd-8e1f-bed3b7ce4ea0
     cipher: auto
     tls: true
     skip-cert-verify: true
@@ -53,6 +54,7 @@ proxies:
       headers:
         Host: idray.serverip.my.id
     udp: true
+    ## https://serverssh.net/?q=create-v2ray&filter=67
     
   - name: 🇸🇬serverssh-20Nov(Dat)
     server: *bug
@@ -67,7 +69,8 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc
-    udp: true    
+    udp: true
+    ## https://serverssh.net/?q=create-vmess&filter=56
 
 ###########
 
