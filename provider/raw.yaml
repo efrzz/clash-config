@@ -56,11 +56,11 @@ proxies:
     udp: true
     ## https://serverssh.net/?q=create-v2ray&filter=67
     
-  - name: 🇸🇬serverssh-20Nov(Dat)
+  - name: 🇸🇬serverssh-26Nov(Dat)
     server: *bug
     port: 443
     type: vmess
-    uuid: 424bac65-725c-4bbc-be1c-fa66612e5ae7
+    uuid: 11109fdf-7f87-4b4c-9c39-d4ae1ee2eddb
     alterId: 0
     cipher: auto
     tls: true
