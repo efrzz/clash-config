@@ -1,166 +1,18 @@
 ## proxy provider by @efrzz ##
 
 bug-url:
-  - &bug sogood.linefriends.com # isi dengan bug andalan
+  - &bug quiz.staging.vidio.com # isi dengan bug andalan
 
 proxies:
-
-## EDUKASI ##
-
-  - name: 🇮🇩🎓onlyssh-25oktob
-    server: ajakteman.skillacademy.com
-    port: 80
-    type: vless
-    uuid: 11c6c47f-42ea-4681-8b9c-ce659f2ac6f0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id1.kitu.xyz
-    network: ws
-    ws-opts:
-      path: /vless-ws/
-      headers:
-        Host: id1.kitu.xyz
-    udp: true
     
-  - name: 🎓sshs8.com-22Okt
-    server: ajakteman.skillacademy.com
-    port: 80
-    type: vmess
-    uuid: dd7406cf-6532-4e51-b374-f7ed64529ac3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: si5ultara.09vpn.com
-    network: ws
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: si5ultara.09vpn.com
-    udp: true
-    
-    
-## FLEX LINE ##
-    
-  - name: 🇮🇩 AMP
-    server: *bug
+  - name: 🇸🇬Global-trosing
+    server: quiz.staging.vidio.com
     port: 443
     type: trojan
-    password: 8745aaa0-68ef-11ee-8573-1239d0255272
+    password: 467d581b-1497-4718-a5b7-044e30963114
     skip-cert-verify: true
-    sni: sg-2.test3.net
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-2.test3.net
-    udp: true
-
-  - name: 🇮🇩 HERZA
-    server: *bug
-    port: 443
-    type: trojan
-    password: 5ad60600-68f0-11ee-9d85-1239d0255272
-    skip-cert-verify: true
-    sni: id-1.test3.net
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: id-1.test3.net
-    udp: true
-    
-  - name: 🇸🇬 HURICANE
-    server: *bug
-    port: 443
-    type: trojan
-    password: 769f50a0-58c5-11ee-a960-1239d0255272
-    skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg1-trojan.bonds.id
-    udp: true
-   
-  - name: 🇮🇩 onlyssh-22oktobr
-    server: *bug
-    port: 443
-    type: vmess
-    uuid: 36289899-ffc7-45c6-8f0e-343059c88b53
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id1.kitu.xyz
+    sni: trojan-sg01.globalssh.xyz
     network: grpc
     grpc-opts:
-      grpc-service-name: vmess-grpc
+      grpc-service-name: trojan-grpc
     udp: true
-    
- # - name: 🇸🇬 serverssh-7nov
- #   server: *bug
- #   port: 443
- #   type: vmess
- #   uuid: 8ac59ac9-bbc0-4243-8c91-5cc6afedbe6b
- #   alterId: 0
- #   cipher: auto
- #   tls: true
- #  skip-cert-verify: true
- #  servername: sgm2grpc.serverip.my.id
- #   network: grpc
- #   grpc-opts:
- #     grpc-service-name: grpc
- #   udp: true
-    
-  - name: 🇮🇩 mainssh.com-23Oktobre
-    server: *bug
-    port: 443
-    type: trojan
-    password: mainssh-23oktobre
-    skip-cert-verify: true
-    sni: idtgrpc.mainssh.xyz
-    network: grpc
-    grpc-opts:
-      grpc-service-name: trojangrpc
-    udp: true
-
-  - name: 24oktob-vpnjantit.com
-    server: *bug
-    port: 443
-    type: vmess
-    uuid: 3e2fec02-700c-11ee-b230-efbd44a47385
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: indo7.vpnjantit.com
-    alterId: 0
-    ws-opts:
-      path: /vpnjantit
-      headers:
-        Host: indo7.vpnjantit.com
-
-## ======================================= ##
-
-## EXP 01 NOVEMBER 2023 (999 Gb)
-  - name: 更新订阅|同步最新节点信息|移动
-    server: *bug
-    port: 443
-    type: vmess
-    uuid: ceb808a3-ae43-3602-b74a-109d7526b9b5
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: b.db-link.in
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: b.db-link.in
-    udp: true
-    
