@@ -1,11 +1,11 @@
 ## proxy provider by @efrzz ##
 
 bug-url:
-  - &bug quiz.staging.vidio.com # isi dengan bug andalan
+  - &bug lipcon.com # isi dengan bug andalan
 
 proxies:
   - name: oracle.sg.efrzz.xyz
-    server: "*bug"
+    server: *bug
     port: 443
     type: vless
     uuid: 375ff700-ce60-451c-8e69-40eb56bce911
@@ -20,7 +20,7 @@ proxies:
         Host: oracle.sg.efrzz.xyz
     udp: true
   - name: bytevirt.sg.efrzz.xyz
-    server: "*bug"
+    server: *bug
     port: 443
     type: vless
     uuid: 0dd0409d-5293-4d52-bf2b-2e2913608d25
@@ -35,7 +35,7 @@ proxies:
         Host: bytevirt.sg.efrzz.xyz
     udp: true
   - name: tm.my.efrzz.xyz
-    server: "*bug"
+    server: *bug
     port: 443
     type: vless
     uuid: 973640c4-4510-42b9-9167-c0d3b1984c90
@@ -50,7 +50,7 @@ proxies:
         Host: tm.my.efrzz.xyz
     udp: true
   - name: ovh.sg.efrzz.xyz
-    server: "*bug"
+    server: *bug
     port: 443
     type: vless
     uuid: 0dfe78ab-897a-47eb-acf2-43adb4ac773e
@@ -65,7 +65,7 @@ proxies:
         Host: ovh.sg.efrzz.xyz
     udp: true
   - name: sgdo.efrzz.xyz
-    server: "*bug"
+    server: *bug
     port: 443
     type: vless
     uuid: 23573aa0-2bd1-47a3-93b9-1af62ad30254
