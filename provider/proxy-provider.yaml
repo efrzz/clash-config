@@ -1,12 +1,81 @@
 ## proxy provider by @efrzz ##
 
 bug-url:
-&bug quiz.staging.vidio.com # isi dengan bug andalan
+  - &bug quiz.staging.vidio.com # isi dengan bug andalan
 
 proxies:
-
-vless://375ff700-ce60-451c-8e69-40eb56bce911@*bug:443?encryption=none&security=tls&sni=oracle.sg.efrzz.xyz&fp=randomized&type=ws&host=oracle.sg.efrzz.xyz&path=%2F%3Fed%3D2048#oracle.sg.efrzz.xyz
-vless://0dd0409d-5293-4d52-bf2b-2e2913608d25@*bug:443?encryption=none&security=tls&sni=bytevirt.sg.efrzz.xyz&fp=randomized&type=ws&host=bytevirt.sg.efrzz.xyz&path=%2F%3Fed%3D2048#bytevirt.sg.efrzz.xyz
-vless://973640c4-4510-42b9-9167-c0d3b1984c90@*bug:443?encryption=none&security=tls&sni=tm.my.efrzz.xyz&fp=randomized&type=ws&host=tm.my.efrzz.xyz&path=%2F%3Fed%3D2048#tm.my.efrzz.xyz
-vless://0dfe78ab-897a-47eb-acf2-43adb4ac773e@*bug:443?encryption=none&security=tls&sni=ovh.sg.efrzz.xyz&fp=randomized&type=ws&host=ovh.sg.efrzz.xyz&path=%2F%3Fed%3D2048#ovh.sg.efrzz.xyz
-vless://23573aa0-2bd1-47a3-93b9-1af62ad30254@*bug:443?encryption=none&security=tls&sni=sgdo.efrzz.xyz&fp=randomized&type=ws&host=sgdo.efrzz.xyz&path=%2F%3Fed%3D2048#sgdo.efrzz.xyz
+  - name: oracle.sg.efrzz.xyz
+    server: "*bug"
+    port: 443
+    type: vless
+    uuid: 375ff700-ce60-451c-8e69-40eb56bce911
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oracle.sg.efrzz.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: oracle.sg.efrzz.xyz
+    udp: true
+  - name: bytevirt.sg.efrzz.xyz
+    server: "*bug"
+    port: 443
+    type: vless
+    uuid: 0dd0409d-5293-4d52-bf2b-2e2913608d25
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: bytevirt.sg.efrzz.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: bytevirt.sg.efrzz.xyz
+    udp: true
+  - name: tm.my.efrzz.xyz
+    server: "*bug"
+    port: 443
+    type: vless
+    uuid: 973640c4-4510-42b9-9167-c0d3b1984c90
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: tm.my.efrzz.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: tm.my.efrzz.xyz
+    udp: true
+  - name: ovh.sg.efrzz.xyz
+    server: "*bug"
+    port: 443
+    type: vless
+    uuid: 0dfe78ab-897a-47eb-acf2-43adb4ac773e
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ovh.sg.efrzz.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: ovh.sg.efrzz.xyz
+    udp: true
+  - name: sgdo.efrzz.xyz
+    server: "*bug"
+    port: 443
+    type: vless
+    uuid: 23573aa0-2bd1-47a3-93b9-1af62ad30254
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.efrzz.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sgdo.efrzz.xyz
+    udp: true
